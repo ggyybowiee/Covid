@@ -1,0 +1,175 @@
+/* 
+* @Author: anchen
+* @Date:   2017-09-15 15:53:44
+ * @Last Modified by: xubo
+ * @Last Modified time: 2020-04-09 09:18:48
+*/
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0 auto;
+  color: #474e58;
+  min-width: 320px;
+  max-width: 800px;
+}
+
+body {
+  position: relative;
+  font-family: Microsoft YaHei;
+  min-width: 320px;
+  overflow: auto;
+  max-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* 清除浮动 */
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: '';
+  visibility: hidden;
+  height: 0;
+}
+
+.clearfloat {
+  zoom: 1;
+}
+
+/*去除固定表头滚动条*/
+.el-table__fixed {
+  overflow: hidden;
+  height: 100% !important;
+}
+
+/* 提示消息 */
+.el-message {
+  width: 90%;
+  min-width: unset;
+  opacity: 0.8;
+  background-color: #000;
+  border: unset;
+  top: 39%;
+  padding: 1.5rem 0;
+  transition: unset;
+  max-width: 800px;
+}
+
+.el-message .el-message__content {
+  padding: 0 4%;
+  line-height: 1.75rem;
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.el-message__closeBtn {
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  display: block;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 2px;
+  transform: unset;
+}
+
+.el-message.is-closable .el-message__content {
+  padding: 0 4%;
+  line-height: 1.75rem;
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.el-message-fade-enter,
+.el-message-fade-leave-active {
+  opacity: unset;
+  transform: unset;
+}
+
+.el-message-fade-enter-active,
+.el-message-fade-enter-to {
+  opacity: unset;
+  transform: unset;
+}
+
+.el-message-box__message p {
+  color: #4E4E4E;
+  font-size: 13px;
+}
+
+.el-message-box__btns button:first-child {
+  background-color: #ffffff;
+  color: #4E4E4E;
+  border: 1px solid #e5e5e5;
+}
+
+.el-message-box__header {
+  padding: 0 !important;
+  padding-top: 30px !important;
+}
+
+.el-message-box__title {
+  font-size: 13px;
+  color: #333333;
+}
+
+.el-message-box__content {
+  color: #333333;
+  font-size: 12px !important;
+  padding: 19px 15px 25px 15px !important
+}
+
+.el-message-box__btns button:nth-child(2) {
+  margin-left: 20%;
+}
+
+.el-message-box__btns {
+  padding: 0 !important;
+}
+
+.tooltip-wrap {
+  display: flex;
+}
+
+.tooltip-wrap>div {
+  flex: 1;
+}
+
+.tooltip-wrap>div:first-child {
+  padding-right: .5rem;
+}
+
+.tooltip-wrap>div:last-child {
+  padding-left: .5rem;
+}
+
+.tooltip-wrap .btn {
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip-wrap .btn .shopIcon {
+  font-size: inherit;
+}
